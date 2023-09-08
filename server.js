@@ -8,13 +8,13 @@ app.use(express.json());
 app.get("/api", (req, res) => {
 	const { slack_name, track } = req.query;
 
-	if (!slack_name || track) {
+	if (!slack_name || !track) {
 		return res.status(400).json({ message: "slack_name and track are required query parameters" })
 	}
 
 	const currentDate = new Date();
 	const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-	const currentDay = dayNames[currentDate.getUTCDate()];
+	const currentDay = dayNames[currentDate.getDay()];
 	const utcTime = currentDate.toISOString();
 
 	return res.status(200).json({
