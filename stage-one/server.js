@@ -22,8 +22,8 @@ app.get("/api", (req, res) => {
 		current_day: currentDay,
 		utc_time: utcTime,
 		track,
-		github_file_url: "https://github.com/Abiodun-Shittu/HNGX-Internship/blob/main/Backend-Track/stage-one/server.js",
-		github_repo_url: "https://github.com/Abiodun-Shittu/HNGX-Internship",
+		github_file_url: "https://github.com/Abiodun-Shittu/Backend-Track/blob/main/stage-one/server.js",
+		github_repo_url: "https://github.com/Abiodun-Shittu/Backend-Track",
 		status_code: 200
 	})
 })
