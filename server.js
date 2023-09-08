@@ -22,7 +22,7 @@ app.get("/api", (req, res) => {
 		current_day: currentDay,
 		utc_time: utcTime,
 		track,
-		github_file_url: "https://github.com/Abiodun-Shittu/backend-stage-one/main/server.js",
+		github_file_url: "https://github.com/Abiodun-Shittu/backend-stage-one/blob/main/server.js",
 		github_repo_url: "https://github.com/Abiodun-Shittu/backend-stage-one",
 		status_code: 200
 	})
