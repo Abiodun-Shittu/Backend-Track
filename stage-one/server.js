@@ -19,7 +19,7 @@ app.get("/api", (req, res) => {
 	const currentDate = new Date();
 	const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 	const currentDay = dayNames[currentDate.getDay()];
-	const utcTime = currentDate.toISOString();
+	const utcTime = currentDate.toISOString().slice(0, 19) + "Z";
 
 	return res.status(200).json({
 		slack_name,
